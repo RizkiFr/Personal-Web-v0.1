@@ -1,0 +1,267 @@
+*{
+    font-family: 'Nunito';
+}
+body{
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.home{
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 95vh;
+    position: relative;
+}
+.home::before{
+    width: 100%;
+    min-height: 95vh;
+    background: linear-gradient(to top right, #00d8c2, #0068b7);
+    background: -moz-linear-gradient(TO top right, #00d8c2, #0068b7);
+	background: linear-gradient(TO top right, #00d8c2, #0068b7);
+    background-size: cover;
+    position: absolute;
+    content: '';
+    opacity: 0.8;
+}
+.particles-js-canvas-el{
+    height: 95vh !important;
+    width: 100%;
+}
+.profile{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin: 150px auto;
+    left: 0px; right: 0px;
+    position: absolute;
+    
+}
+.foto-animate{
+    width: 210px;
+    height: 210px;
+    border: 5px solid white;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    display: inline-block;
+    margin: 145px auto;
+    left: 0px; right: 0px;
+    animation: spin 5s infinite linear;
+    -webkit-animation: spin 5s infinite linear;
+}
+@keyframes spin { 
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.biodata{
+    margin-top: 370px;
+    left: 0px; right: 0px;
+    position: absolute;
+    color: antiquewhite;
+    text-align: center;
+    font-family: 'Nunito';
+    font-weight: 600;
+}
+.nama{
+    font-size: 2em;
+    font-style: normal;
+    margin-bottom: 0px;
+}
+.title{
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 200;
+    margin-top: -10px;
+    margin-bottom: 0px;
+}
+.sosmed a{
+    position: relative;
+    margin: auto 10px;
+}
+.sosmed a i{
+    font-size: 2em;
+    left: 0px; right: 0px;
+    color: antiquewhite;
+    position: absolute;
+}
+.sosmed a i:hover{
+    transform: scale(1.5);
+    transition: all 0.3s;
+}
+.content{
+    width: 100%;
+    min-height: 500px;
+}
+.nav-tabs{
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #00d8c2;
+    border-top: 5px solid transparent;
+}
+.nav-tabs .nav-link.active{
+    background-color: rgba(0, 216, 194, 1);
+    border: 1px solid #00d8c2;
+    color: white;
+}
+.nav-tabs .nav-link:hover{
+    border: 1px solid #00d8c2;
+    color: #00d8c2;
+}
+.nav-tabs .nav-link.active:focus{
+    color: white;
+}
+.nav-link{
+    color: aliceblue;
+    font-weight: 600;
+}
+.about-content{
+    border-bottom: 1.2px dashed white;
+}
+.about-content p{
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 0px;
+}
+.about-content p a{
+    color: white;
+}
+.about-content h6{
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.htmlskill{
+        display: inline-block;
+        position: relative;
+}
+.cssskill{
+    display: inline-block;
+    position: relative;
+}
+.jsskill{
+    display: inline-block;
+    position: relative;
+}
+.container strong {
+    position: absolute;
+    top: 85px;
+    font-size: 50px;
+    color: antiquewhite;
+  }
+.container strong i {
+    font-style: normal;
+    font-size: 0.6em;
+    font-weight: normal;
+  }
+.container span{
+    position: absolute;
+    top: 140px;
+    color: antiquewhite;
+}
+.content-service{
+    color: white;
+}
+.content-service img{
+    width: auto;
+    height: 150px;
+    margin: auto;
+    left: 0px; right: 0px;
+    position: absolute;
+}
+.desc{
+    text-align: center;
+    margin-top: 160px;
+}
+.contactme{
+    transition: all 1s;
+    border: 3px solid white;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.tab-pane.active {
+    animation: zoom-out 1s ease-out;
+}
+
+@keyframes zoom-out {
+    0% { opacity: 0; transform: scale(0); }
+    100% { opacity: 1; transform: scale(1); }
+}
+.form-control{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: antiquewhite;
+}
+.form-control:focus{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: antiquewhite;
+}
+.btn-custom{
+    background: linear-gradient(to right, #0068b7, #00d8c2);
+    color: antiquewhite;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.copy{
+    background: linear-gradient(to right, #0068b7, #00d8c2);
+    width: 100%;
+    height: 40px;
+}
+.line-1{
+    margin: auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden; 
+}
+.type{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 22em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+
+@media only screen and (max-width: 768px) {
+  .skilogo{
+      display: none !important;
+  }
+  .web, .android, .heart{
+      margin-bottom: 30px;
+  }
+  .foto-about{
+      margin-bottom: 30px;
+  }
+  .desc-about{
+      padding-left: 30px;
+      padding-right: 30px;
+  }
+  .skill-mobile{
+      margin-bottom: 0px !important;
+  }
+  .content-service{
+      margin-bottom: 0px !important;
+  }
+  .contactme{
+      padding: 20px 10px !important;
+  }
+  .line-1{
+      font-size: 0.9em;
+  }
+  .profile{
+      margin-top: 90px;
+  }
+  .foto-animate{
+      margin-top: 85px;
+  }
+  .biodata{
+      margin-top: 310px;
+  }
+}
